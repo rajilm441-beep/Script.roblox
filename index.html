@@ -1,10 +1,11 @@
-<!doctype html>
-<html lang="id"><head>
+<!DOCTYPE html>
+<html lang="id">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ScriptBin</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0a0b12; --panel:#14151f; --panel2:#1a1c28; --border:#262838; --text:#eceefa; --muted:#7d84a0;
@@ -68,7 +69,7 @@ pre.code-view{background:var(--bg);border:1px solid var(--border);border-radius:
 </head>
 <body>
 <header>
-  <h1>SCRIPT ROBLOX</h1>
+  <h1><span class="eyes" aria-hidden="true"><svg width="38" height="18" viewBox="0 0 44 20"><ellipse class="eye" cx="10" cy="10" rx="9" ry="9"/><ellipse class="eye" cx="34" cy="10" rx="9" ry="9"/><circle class="pupil" cx="10" cy="10" r="3.6"/><circle class="pupil" cx="34" cy="10" r="3.6"/></svg></span>ScriptBin</h1>
   <nav>
     <button id="navNew" class="active">Buat Baru</button>
     <button id="navBrowse">Jelajahi</button>
@@ -134,7 +135,7 @@ pre.code-view{background:var(--bg);border:1px solid var(--border);border-radius:
       <div class="actions" style="margin-top:0">
         <button class="btn small secondary" id="btnCopyScript">Salin Script</button>
         <button class="btn small secondary" id="btnCopyLink">Salin Link</button>
-        <button class="btn small secondary" id="btnBack">← Kembali</button>
+        <button class="btn small secondary" id="btnBack">&larr; Kembali</button>
       </div>
     </div>
     <div class="meta" id="vMeta" style="margin-bottom:10px"></div>
@@ -286,6 +287,5 @@ async function loadList(){
 
 init();
 </script>
-
-
-</body></html>
+</body>
+</html>
